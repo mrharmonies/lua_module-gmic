@@ -1,6 +1,6 @@
 # lua_module-gmic
 Lua module written in C for interfacing with libgmic from G'MIC. G'MIC (GREYC's Magic for Image Computing) is a free and open-source 
-framework for image processing. This Lua module provide one function called ```gmic_call([gmic command string])```. The ```gmic command string``` is passed to ```gmic_call()``` as declared in ```gmic_libc.h```
+framework for image processing. This Lua module provide one function called ```gmic_call([gmic command string])```. The ```gmic command string``` is passed to ```gmic_call()``` declared in ```gmic_libc.h```
 
 # usage example
 ```
