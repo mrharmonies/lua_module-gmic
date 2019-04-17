@@ -27,6 +27,6 @@ int gimik(lua_State *L) {
 }
 
 int luaopen_lua_gmic(lua_State *L){
-	lua_register(L,"gmic_call",gimik);
+	lua_register(L,"gmic",gimik);
 	return 0;
 }
