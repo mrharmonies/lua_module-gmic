@@ -6,11 +6,10 @@ framework for image processing. This Lua module provide one function called ```g
 ```
 Lua 5.3.5  Copyright (C) 1994-2018 Lua.org, PUC-Rio
 > require("lua_gmic")
-> gmic_call("lion.jpg -display") -- displays lion.jpg image file
-> gmic_call("lion.jpg -rotate 45 -display") -- rotate lion.jpg 40 degree clockwise and display the result
-> gmic_call("400,400 rorschach 3% -display") -- render rorschach-like inkblots and display it
+> gmic("lion.jpg -display") -- displays lion.jpg image file
+> gmic("lion.jpg -rotate 45 -display") -- rotate lion.jpg 40 degree clockwise and display the result
+> gmic("400,400 rorschach 3% -display") -- render rorschach-like inkblots and display it
 ```
-# screenshot
 
 # compilation
 Just compile the main source file ```lua_gmic.c``` with your favorite C compiler, e.g ```gcc -L. -shared -fPIC -o lua_gmic.so lua_gmic.c -llua -lcgmicstatic```. On Windows, just change ```lua_gmic.so``` to ```lua_gmic.dll```
