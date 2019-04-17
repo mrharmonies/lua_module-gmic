@@ -7,7 +7,7 @@ framework for image processing. This Lua module provide one function called "gmi
 Lua 5.3.5  Copyright (C) 1994-2018 Lua.org, PUC-Rio
 > require("lua_gmic")
 > gmic_call("lion.jpg -display") -- displays lion.jpg image file
-> gmic_call("lion.jpd -rotate 45 -display") -- rotate lion.jpg 40 degree clockwise and display the result
+> gmic_call("lion.jpg -rotate 45 -display") -- rotate lion.jpg 40 degree clockwise and display the result
 > gmic_call("400,400 rorschach 3% -display") -- render rorschach-like inkblots and display it
 ```
 # screenshot
