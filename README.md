@@ -10,9 +10,21 @@ Lua 5.3.5  Copyright (C) 1994-2018 Lua.org, PUC-Rio
 > gmic("lion.jpg -rotate 45 -display") -- rotate lion.jpg 40 degree clockwise and display the result
 > gmic("400,400 rorschach 3% -display") -- render rorschach-like inkblots and display it
 ```
+# screenshot
+Test image can be viewed with ```gmic("testimage2d 500 -display")```
+
+![](https://drive.google.com/uc?id=1QwVww7fvu4fbLzgqlPB7VAFbt2-bUQfe)
+
+Cartoon effect ```gmic("solat.jpg +cartoon 3,80,15 -display")```
+
+![](https://drive.google.com/uc?id=1arO57YkfJiIeb5WTOLKDmFHFMcsDyw2R)
+
+Fire edges effect. ```gmic("lion.jpg +fire_edges , -display")```
+
+![](https://drive.google.com/uc?id=1wD6zJodEdms1ZCGdi6s860FJ3zVsYl9r)
 
 # compilation
-Just compile the main source file ```lua_gmic.c``` with your favorite C compiler, e.g ```gcc -L. -shared -fPIC -o lua_gmic.so lua_gmic.c -llua -lcgmicstatic```. On Windows, just change ```lua_gmic.so``` to ```lua_gmic.dll```
+You must first have ```libgmic``` ready. Download them from their website, extract and copy all file to compilation folder and compile the main source file ```lua_gmic.c``` with your favorite C compiler, e.g ```gcc -L. -shared -fPIC -o lua_gmic.dll lua_gmic.c -llua -lcgmicstatic```.
 
 # license
 MIT License
