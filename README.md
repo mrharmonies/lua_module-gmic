@@ -23,6 +23,9 @@ Fire edges effect. ```gmic("lion.jpg +fire_edges , -display")```
 
 ![](https://drive.google.com/uc?id=1wD6zJodEdms1ZCGdi6s860FJ3zVsYl9r)
 
+# download
+Binary releases can be download [here](https://github.com/mrharmonies/lua_module-gmic/releases)
+
 # compilation
 You must first have ```libgmic``` ready. Download them from their website, extract and copy all file to compilation folder and compile the main source file ```lua_gmic.c``` with your favorite C compiler, e.g ```gcc -L. -shared -fPIC -o lua_gmic.dll lua_gmic.c -llua -lcgmicstatic```.
 
